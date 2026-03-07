@@ -30,35 +30,35 @@ time.sleep(3)
 table = pd.read_csv("produtos.csv")
 print(table)
 
-
 for linha in table.index:
+
     pyautogui.click(x=579, y=361)
 
     pyautogui.write(str(table.loc[linha, "codigo"]))
     pyautogui.press("tab")
 
-    pyautogui.write("marca")
+    pyautogui.write(str(table.loc[linha, "marca"]))
     pyautogui.press("tab")
 
-    pyautogui.write("tipo")
+    pyautogui.write(str(table.loc[linha, "tipo"]))
     pyautogui.press("tab")
 
-    pyautogui.write("Categoria")
+    pyautogui.write(str(table.loc[linha, "categoria"]))
     pyautogui.press("tab")
 
-    pyautogui.write("preco")
+    pyautogui.write(str(table.loc[linha, "preco"]))
     pyautogui.press("tab")
 
-    pyautogui.write("Custo")
+    pyautogui.write(str(table.loc[linha, "custo"]))
     pyautogui.press("tab")
 
-    pyautogui.write("obs")
+    pyautogui.write(str(table.loc[linha, "obs"]))
     pyautogui.press("tab")
 
     pyautogui.press("enter")
 
     pyautogui.scroll(+5000)
-
+# 6 repetir o passo 5
 
 
 
